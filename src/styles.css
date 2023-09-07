@@ -9,7 +9,14 @@ body {
   max-width: 1400px;
   margin: 0 auto;
 }
-
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
 body header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/096/067/original/pexels-skitterphoto-9253.jpg?1694052232');
   background-repeat: no-reapeat;
@@ -52,9 +59,42 @@ header a {
   display: inline-block;
 }
 
-@media (max-width: 900px) {
+footer {
+color: white;
+background-image: linear-gradient(rgba(39,32,68,0.9), rgba(39,32,68,0.6)), url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/096/068/original/pexels-lisa-fotios-1534560.jpg?1694052412");
+background-size: cover;
+background-repeat: no-repeat;
+padding: 100px 0;
+}
+footer h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+footer p {
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+opacity: 0.7;
+margin-right: 20px;
+}
+footer ul {
+  padding: 0;
+}
+footer li {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+footer a {
+  color: white;
+  opacity: 0.7;
+
+}
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
+
   }
   header h1 {
     font-size: 48px;
